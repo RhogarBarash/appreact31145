@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar/NavBar.js';
 
 const App = () => {
+  const styles = {
+    color: 'yellow',    
+    fontSize: '70px'
+  }
   return (
+    
     <div className="App">
       <header className="App-header">
+        <NavBar />
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Editar <code>src/App.js</code> para mostrar cambios en esta pagina de inicio.
-        </p>
-        <button>Un botón</button>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Curso React CHouse
-        </a>
+        <h1 style={styles} className="Titulo">Bienvenidos a este proyecto de React</h1>         
+        <button>Un botón</button>        
       </header>
     </div>
   );
