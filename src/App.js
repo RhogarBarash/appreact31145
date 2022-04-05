@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar.js';
 import Button from './components/Button/Button.js';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.js';
+import Counter from './components/ItemCounter/Counter.js';
 
 const App = () => {  
   const styles = {
@@ -22,7 +23,7 @@ const App = () => {
         <NavBar/>        
         <img src={logo} className="App-logo" alt="logo" />
         <h1 style={styles} className="Titulo">Bienvenidos a este proyecto de React</h1>         
-        <Button callbak={myFunction} Label="Un botón"/>        
+        <Counter />       
       </header>
     </div>
   );
