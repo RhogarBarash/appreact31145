@@ -25,6 +25,9 @@ const App = () => {
         <h1 style={styles} className="Titulo">Bienvenidos a este proyecto de React</h1>         
         <Counter />       
       </header>
+      <body>
+        
+      </body>
     </div>
   );
 }

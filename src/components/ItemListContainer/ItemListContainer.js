@@ -1,8 +1,22 @@
+import {useState, useEffect } from 'react'
+import { getProducts } from '../../asyncmock.js'
+
 const ItemListContainer = (props) => {
-    console.log(props.greeting)
+    const [products, setProducts] = useState ([])   
+
+    useEffect(() => {
+        getProducts().then(products => {
+            setProducts(products)
+        })
+    },[])
 
     return(
-        <h1>{props.greeting}</h1>
+        <div>
+            <h1>{props.greeting}</h1>
+            <ul>
+                {products.map(product => <li>{product.name}</li>)}
+            </ul>
+        </div>
     )
 }
 
